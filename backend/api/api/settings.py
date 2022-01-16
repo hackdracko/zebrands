@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -110,6 +111,8 @@ DATABASES = {
         },
     }
 }
+
+DATABASES['default'] = dj_database_url.config(default='mysql://baa5c1a3d7a5c0:cac57194@us-cdbr-east-05.cleardb.net/heroku_26f44b68a436a59')
 
 
 # Password validation

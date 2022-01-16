@@ -1,12 +1,12 @@
 from rest_framework.viewsets import ModelViewSet
 from core.pagination import CustomPagination
-from products.models import *
-from products.api.serializers import *
+from users.models import *
+from users.serializers import *
 from api.permissions import IsAdminOrAnonymous
 
-class ProductsModelViewSet(ModelViewSet):
+class UsersModelViewSet(ModelViewSet):
     permission_classes = [IsAdminOrAnonymous]
     pagination_class = CustomPagination
-    serializer_class = ProductsSerializer
-    queryset = Products.objects.all()
+    serializer_class = UserSerializer
+    queryset = User.objects.all()
     # http_method_names = ['get']

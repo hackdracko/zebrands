@@ -18,7 +18,7 @@ class Products(DatesModel):
     price = DecimalField(max_digits=9, decimal_places=2)
     brand = models.CharField(max_length=50)
 
-class LogProducts(DatesModel):
+class LogActions(DatesModel):
     class Meta:
         verbose_name = "Log Product"
         verbose_name_plural = "Log Products"

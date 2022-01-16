@@ -9,4 +9,4 @@ class ProductsSerializer(serializers.ModelSerializer):
 class LogActionsSerializer(serializers.ModelSerializer):
     class Meta:
         model = LogActions
-        fields = ['id', 'sku', 'name', 'price', 'brand', 'created_at', 'updated_at']
+        fields = ['id', 'action', 'data', 'user', 'created_at', 'updated_at']

@@ -26,7 +26,7 @@ API_VERSION = 'api/v1/'
 SECRET_KEY = '^o-qqp3p*kj9wfc(f)j09c^vrhttqll9g7tuem*im344tr2^c('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -113,7 +113,7 @@ DATABASES = {
     }
 }
 
-DATABASES['default'] = dj_database_url.config(default='mysql://baa5c1a3d7a5c0:cac57194@us-cdbr-east-05.cleardb.net/heroku_26f44b68a436a59')
+# DATABASES['default'] = dj_database_url.config(default='mysql://baa5c1a3d7a5c0:cac57194@us-cdbr-east-05.cleardb.net/heroku_26f44b68a436a59')
 
 
 # Password validation

@@ -26,7 +26,7 @@ API_VERSION = 'api/v1/'
 SECRET_KEY = '^o-qqp3p*kj9wfc(f)j09c^vrhttqll9g7tuem*im344tr2^c('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 

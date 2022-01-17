@@ -7,4 +7,5 @@ Install in docker
     - Client type: Confidential
     - Authorization grant type: Resource owner password-base
     - Copy and Paste CLIENT_ID and CLIENT_SECRET in auth.py
-5. Log to api
+5. Login to api
+6. Adding user anonymous where is_staff = False
